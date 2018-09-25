@@ -199,7 +199,6 @@
             <version>1</version>
             <scope>test</scope>
         </dependency>
-
     </dependencies>
     <build>
         <finalName>flyer-springmvc-rest</finalName>

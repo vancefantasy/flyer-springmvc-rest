@@ -2,7 +2,6 @@
 <configuration>
     <jmxConfigurator/>
     <property name="LOG_HOME" value="/tmp/flyer-spring-rest/prod"/>
-    <!-- DEBUG -->
     <appender name="FILE-DEBUG" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <level>DEBUG</level>
@@ -17,7 +16,6 @@
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}: - %msg%n</pattern>
         </encoder>
     </appender>
-    <!-- INFO -->
     <appender name="FILE-INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>INFO</level>
@@ -30,7 +28,6 @@
             <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36}: - %msg%n</pattern>
         </encoder>
     </appender>
-    <!-- ERROR -->
     <appender name="FILE-ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
             <level>WARN</level>
