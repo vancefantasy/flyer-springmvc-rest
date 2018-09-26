@@ -4,7 +4,7 @@
 flyer-springmvc-rest是一个示例项目，它由flyer-maker生成。flyer-springmvc-rest尝试提供一种项目搭建的最佳实践，让开发人员快速开发生产可用的Restful服务。
 
 # 集成组件
-- Spring(MVC)4.3.18
+- Spring(MVC) 4.3.18
 - mapper、entity、dao、service、controller及对应单元测试（根据数据库表生成）
 - 第三方工具包(Guava,Jodd,vjkit,common-*等)，满足缓存、字符串、日期、Json、集合、Http、IO等的日常处理
 - 异常处理最佳实践
