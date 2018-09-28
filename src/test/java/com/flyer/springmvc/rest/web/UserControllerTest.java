@@ -15,7 +15,6 @@ import javax.inject.Inject;
 
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyLong;
-import static org.mockito.Matchers.anyObject;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
@@ -40,10 +39,9 @@ public class UserControllerTest extends AbstractMVCTest {
 
         when(userService.saveUser(any(User.class))).thenReturn(UserData.generatOne(true));
 
-        this.mockMvc.perform(
-            post("/user/add").contentType(MediaType.APPLICATION_JSON_UTF8).content(JsonMapper.INSTANCE.toJson(postUser)))
-            .andExpect(status().isOk()).andDo(print())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+        this.mockMvc.perform(post("/user/add").contentType(MediaType.APPLICATION_JSON_UTF8)
+            .content(JsonMapper.INSTANCE.toJson(postUser))).andExpect(status().isOk())
+            .andDo(print()).andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
             .andExpect(jsonPath("code").value(BaseResponse.CODE_SUCCESS));
     }
 
@@ -63,10 +61,9 @@ public class UserControllerTest extends AbstractMVCTest {
 
         when(userService.updateUser(any(User.class))).thenReturn(1);
 
-        this.mockMvc.perform(
-            post("/user/edit").contentType(MediaType.APPLICATION_JSON_UTF8).content(JsonMapper.INSTANCE.toJson(editUser)))
-            .andExpect(status().isOk()).andDo(print())
-            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+        this.mockMvc.perform(post("/user/edit").contentType(MediaType.APPLICATION_JSON_UTF8)
+            .content(JsonMapper.INSTANCE.toJson(editUser))).andExpect(status().isOk())
+            .andDo(print()).andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
             .andExpect(jsonPath("code").value(BaseResponse.CODE_SUCCESS));
     }
 
@@ -76,8 +73,9 @@ public class UserControllerTest extends AbstractMVCTest {
 
         when(userService.removeUser(removeUser.getId())).thenReturn(1);
 
-        this.mockMvc.perform(get("/user/remove").param("id", String.valueOf(removeUser.getId()))).andExpect(status().isOk())
-            .andDo(print()).andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
+        this.mockMvc.perform(get("/user/remove").param("id", String.valueOf(removeUser.getId())))
+            .andExpect(status().isOk()).andDo(print())
+            .andExpect(content().contentType(MediaType.APPLICATION_JSON_UTF8))
             .andExpect(jsonPath("code").value(BaseResponse.CODE_SUCCESS));
     }
 

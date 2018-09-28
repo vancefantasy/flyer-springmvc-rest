@@ -42,7 +42,7 @@
     </appender>
 
     <logger name="uk.org.lidalia.sysoutslf4j.context.SysOutOverSLF4J" level="ERROR"/>
-    <logger name="com.flyer.springmvc.rest" level="DEBUG"/>
+    <logger name="com.flyer.springmvc.rest" level="INFO"/>
     <!-- set level 'DEBUG' then print sql log -->
     <logger name="com.flyer.springmvc.rest.dao" level="INFO"/>
 
