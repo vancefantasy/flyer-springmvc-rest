@@ -1,9 +1,9 @@
 package com.flyer.springmvc.rest.service.impl;
 
 import com.flyer.springmvc.rest.AbstractTest;
-import com.flyer.springmvc.rest.dao.UserDao;
-import com.flyer.springmvc.rest.data.UserData;
 import com.flyer.springmvc.rest.domain.User;
+import com.flyer.springmvc.rest.data.UserData;
+import com.flyer.springmvc.rest.dao.UserDao;
 import com.flyer.springmvc.rest.service.UserService;
 import org.junit.Before;
 import org.junit.Test;
@@ -18,6 +18,7 @@ import static org.hamcrest.CoreMatchers.notNullValue;
 import static org.junit.Assert.*;
 import static org.mockito.Matchers.any;
 import static org.mockito.Matchers.anyLong;
+import static org.mockito.Matchers.anyInt;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;

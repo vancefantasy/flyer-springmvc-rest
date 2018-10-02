@@ -5,7 +5,8 @@ import com.flyer.springmvc.rest.DBUtils;
 import com.flyer.springmvc.rest.data.UserData;
 import com.flyer.springmvc.rest.domain.User;
 import com.vip.vjtools.vjkit.mapper.JsonMapper;
-import org.junit.*;
+import org.junit.AfterClass;
+import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import static org.junit.Assert.*;

@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.flyer</groupId>
     <artifactId>flyer-springmvc-rest</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>0.0.1</version>
     <name>flyer-springmvc-rest</name>
     <packaging>war</packaging>
     <properties>
