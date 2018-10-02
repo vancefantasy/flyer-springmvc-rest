@@ -6,7 +6,7 @@ import org.springframework.core.env.Environment;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by jianying.li on 2018/9/16.

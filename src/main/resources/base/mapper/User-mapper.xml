@@ -107,7 +107,7 @@
     <select id="findUserById" parameterType="java.lang.Long" resultMap="userMap">
         select
         <include refid="userBaseColumn"/>
-        from user
+            from user
         where id = #{id}
     </select>
 </mapper>
