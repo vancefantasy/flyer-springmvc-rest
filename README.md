@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/vancefantasy/flyer-springmvc-rest.svg?branch=master)](https://travis-ci.org/vancefantasy/flyer-springmvc-rest)
 [![Coverage Status](https://coveralls.io/repos/github/vancefantasy/flyer-springmvc-rest/badge.svg?branch=master)](https://coveralls.io/github/vancefantasy/flyer-springmvc-rest?branch=master)
+[![License](https://img.shields.io/github/license/vancefantasy/flyer-springmvc-rest.svg)](https://github.com/vancefantasy/flyer-springbmvc-rest/blob/master/LICENSE)
 
 # flyer-springmvc-rest是什么？
 flyer-springmvc-rest是一个示例项目，它由flyer-maker生成。flyer-springmvc-rest尝试提供项目搭建的最佳实践参考，让开发人员在短时间构建生产可用的Restful服务。
