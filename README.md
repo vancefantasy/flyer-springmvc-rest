@@ -6,7 +6,7 @@
 flyer-springmvc-rest是一个Java样例项目，这里维护了flyer-maker项目的模板。
 flyer-maker是一个代码生成工具，可以动态生成工程代码，同时还尝试提供各类型项目工程搭建的参考，让开发人员在短时间构建生产可用的服务。
 
-# 集成组件
+# 集成环境
 - Java 8
 - Spring(MVC) 4.3.18
 - mapper、entity、dao、service、controller及对应单元测试
